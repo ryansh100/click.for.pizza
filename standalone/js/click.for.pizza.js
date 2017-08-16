@@ -60,7 +60,7 @@ var addToPlate = function (sliceType) {
 
     var template = `
         <div class='thumbnail'></div>
-        <div class='type'>You clicked on ${sliceType}!</div>
+        <div class='type'>You received ${sliceType} pizza!</div>
     `;
 
     selection.innerHTML = template;

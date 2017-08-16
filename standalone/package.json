@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "A transactional application to click for pizza",
   "main": "main.js",
+  "build": {
+    "appId": "click.for.pizza",
+    "win": {
+      "target": "portable"
+    }
+  },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "keywords": [
     "pizza"
@@ -12,6 +20,7 @@
   "author": "Ryan Hafer",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.7.5"
+    "electron": "^1.7.5",
+    "electron-builder": "^19.22.1"
   }
 }
