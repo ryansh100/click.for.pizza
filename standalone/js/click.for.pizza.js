@@ -69,10 +69,12 @@ var addToPlate = function (sliceType) {
     image.style.width = "2em";
     selection.querySelector('.thumbnail').appendChild(image);
 
-    var plate = document.getElementById('pizza-plate');
+    var plate = document.getElementById('pizza-delivery');
     plate.innerHTML = '';
 
     plate.appendChild(selection);
+
+    document.getElementById('pizza-filling-bar').classList.remove('filling');
 }
 
 var clickHandler = function() {
@@ -84,7 +86,12 @@ var clickHandler = function() {
         var bounds = type[1];
 
         if(deg >= bounds.min && deg <= bounds.max) {
-            addToPlate(name);
+            // Set delivery started
+            document.getElementById('pizza-filling-bar').classList.add('filling');
+            window.setTimeout(function(){
+                addToPlate(name);
+            }, 3000);
+            return;
         }
     }
 }

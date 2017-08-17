@@ -5,37 +5,52 @@
         <title>Click For Pizza</title>
         <script type="text/javascript" src="js/click.for.pizza.js"></script>
         <link rel="stylesheet" type="text/css" href="css/click.for.pizza.css">
+        <link rel="icon" href="build/icon.ico" type="image/x-icon" />
     </head>
     <body>
         <div class="app">
             <div id="pizza-pie" class="pie">
-                <div id="supreme" class="pizza">
+                <div id="Artichoke" class="pizza">
                     <img src="img/pizza.png" width="125px" />
                 </div>
-                <div id="pepperoni" class="pizza">
+                <div id="Bacon" class="pizza">
                     <img src="img/pizza.png" width="125px" />
                 </div>
-                <div id="mushroom and olive" class="pizza">
+                <div id="Supreme" class="pizza">
                     <img src="img/pizza.png" width="125px" />
                 </div>
-                <div id="bacon" class="pizza">
+                <div id="Cheese" class="pizza">
                     <img src="img/pizza.png" width="125px" />
                 </div>
-                <div id="peppers and onion" class="pizza">
+                <div id="Hawaiian" class="pizza">
                     <img src="img/pizza.png" width="125px" />
                 </div>
-                <div id="veggie" class="pizza">
+                <div id="Margherita" class="pizza">
                     <img src="img/pizza.png" width="125px" />
                 </div>
-                <div id="bacon" class="pizza">
+                <div id="Mushroom" class="pizza">
                     <img src="img/pizza.png" width="125px" />
                 </div>
-                <div id="bacon" class="pizza">
+                <div id="Pepperoni" class="pizza">
                     <img src="img/pizza.png" width="125px" />
                 </div>
             </div>
+            <div id="location">
+                <form name="location">
+                <input type="text" name="name" style="width:300px" placeholder="Name" /><br/>
+                <input type="text" name="street" style="width:300px" placeholder="Street" /><br/>
+                <input type="text" name="city" style="width:159px" placeholder="City" />
+                <input type="text" name="state" style="width:50px" maxlength="2" placeholder="ST" />
+                <input type="number" name="zip" style="width:75px" placeholder="ZIP" />
+                </form>
+            </div>
             <button class="btn-primary" id="action-button">Click For Pizza</button><br/>
-            <div id="pizza-plate"></div>
+            <div id="pizza-plate">
+                <div id="pizza-filling-bar">
+                </div>
+                <div id="pizza-delivery">
+                </div>
+            </div>
         </div>
     </body>
 </html>

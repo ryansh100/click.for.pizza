@@ -129,3 +129,33 @@ button {
     display: flex;
     align-items: center;
 }
+
+#pizza-plate {
+    border-radius: 15px;
+    padding: 0px;
+    background: #FFF;
+    border: 5px solid #e6e6e6;
+    box-shadow: 0px 0px 5x lightskyblue;
+    position: relative;
+    height: 4em;
+    width:300px;
+}
+
+#pizza-filling-bar {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:0%;
+    background: lightskyblue;
+    border-radius: 10px;
+}
+
+#pizza-filling-bar.filling {
+    transition: width 3s;
+    width:100%;
+}
+
+#pizza-delivery {
+    padding: 1em;
+}
