@@ -6,7 +6,12 @@ export class Slice extends Component {
     }
 
     getImage() {
-        return `img/${this.props.name.toLowerCase()}.png`;
+        let known = ['artichoke', 'pepperoni', 'mushroom', 'cheese', 'margherita', 'bacon', 'hawaiian', 'supreme'];
+        let name = this.props.name.toLowerCase();
+        if(known.indexOf(name) === -1) {
+            name = 'pizza';
+        }
+        return `img/${name}.png`;
     }
 
     getRotation() {
