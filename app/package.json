@@ -1,0 +1,23 @@
+{
+  "name": "click-for-pizza-app",
+  "version": "1.0.0",
+  "description": "Click For Pizza App",
+  "main": "main.js",
+  "build": {
+    "appId": "click.for.pizza",
+    "win": {
+      "target": "portable"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Ryan Hafer",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.7.5",
+    "electron-builder": "^19.22.1"
+  }
+}
